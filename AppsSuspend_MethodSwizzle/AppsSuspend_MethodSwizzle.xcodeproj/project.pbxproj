@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6377BE122081F27300C4DB94 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6377BE112081F27300C4DB94 /* AppDelegate.m */; };
+		6377BE152081F27300C4DB94 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6377BE142081F27300C4DB94 /* ViewController.m */; };
+		6377BE182081F27300C4DB94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6377BE162081F27300C4DB94 /* Main.storyboard */; };
+		6377BE1A2081F27300C4DB94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6377BE192081F27300C4DB94 /* Assets.xcassets */; };
+		6377BE1D2081F27300C4DB94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6377BE1B2081F27300C4DB94 /* LaunchScreen.storyboard */; };
+		6377BE202081F27300C4DB94 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6377BE1F2081F27300C4DB94 /* main.m */; };
+		6377BE2A2081F27300C4DB94 /* AppsSuspend_MethodSwizzleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6377BE292081F27300C4DB94 /* AppsSuspend_MethodSwizzleTests.m */; };
+		6377BE352081F27300C4DB94 /* AppsSuspend_MethodSwizzleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6377BE342081F27300C4DB94 /* AppsSuspend_MethodSwizzleUITests.m */; };
+		6377BE492081F28500C4DB94 /* RemoveButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6377BE462081F28500C4DB94 /* RemoveButton.m */; };
+		6377BE4A2081F28500C4DB94 /* UIViewController+AppsSuspend.m in Sources */ = {isa = PBXBuildFile; fileRef = 6377BE472081F28500C4DB94 /* UIViewController+AppsSuspend.m */; };
+		6377BE4B2081F28500C4DB94 /* AppsSuspendManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6377BE482081F28500C4DB94 /* AppsSuspendManager.m */; };
+		6377BE4E2081F50800C4DB94 /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6377BE4D2081F50800C4DB94 /* OneViewController.m */; };
+		6377BE512081F51300C4DB94 /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6377BE502081F51300C4DB94 /* TwoViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6377BE262081F27300C4DB94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6377BE052081F27300C4DB94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6377BE0C2081F27300C4DB94;
+			remoteInfo = AppsSuspend_MethodSwizzle;
+		};
+		6377BE312081F27300C4DB94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6377BE052081F27300C4DB94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6377BE0C2081F27300C4DB94;
+			remoteInfo = AppsSuspend_MethodSwizzle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6377BE0D2081F27300C4DB94 /* AppsSuspend_MethodSwizzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppsSuspend_MethodSwizzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6377BE102081F27300C4DB94 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6377BE112081F27300C4DB94 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6377BE132081F27300C4DB94 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6377BE142081F27300C4DB94 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6377BE172081F27300C4DB94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6377BE192081F27300C4DB94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6377BE1C2081F27300C4DB94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6377BE1E2081F27300C4DB94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6377BE1F2081F27300C4DB94 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6377BE252081F27300C4DB94 /* AppsSuspend_MethodSwizzleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppsSuspend_MethodSwizzleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6377BE292081F27300C4DB94 /* AppsSuspend_MethodSwizzleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppsSuspend_MethodSwizzleTests.m; sourceTree = "<group>"; };
+		6377BE2B2081F27300C4DB94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6377BE302081F27300C4DB94 /* AppsSuspend_MethodSwizzleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppsSuspend_MethodSwizzleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6377BE342081F27300C4DB94 /* AppsSuspend_MethodSwizzleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppsSuspend_MethodSwizzleUITests.m; sourceTree = "<group>"; };
+		6377BE362081F27300C4DB94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6377BE432081F28500C4DB94 /* RemoveButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoveButton.h; sourceTree = "<group>"; };
+		6377BE442081F28500C4DB94 /* UIViewController+AppsSuspend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AppsSuspend.h"; sourceTree = "<group>"; };
+		6377BE452081F28500C4DB94 /* AppsSuspendManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsSuspendManager.h; sourceTree = "<group>"; };
+		6377BE462081F28500C4DB94 /* RemoveButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoveButton.m; sourceTree = "<group>"; };
+		6377BE472081F28500C4DB94 /* UIViewController+AppsSuspend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AppsSuspend.m"; sourceTree = "<group>"; };
+		6377BE482081F28500C4DB94 /* AppsSuspendManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppsSuspendManager.m; sourceTree = "<group>"; };
+		6377BE4C2081F50800C4DB94 /* OneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneViewController.h; sourceTree = "<group>"; };
+		6377BE4D2081F50800C4DB94 /* OneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneViewController.m; sourceTree = "<group>"; };
+		6377BE4F2081F51300C4DB94 /* TwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
+		6377BE502081F51300C4DB94 /* TwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6377BE0A2081F27300C4DB94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6377BE222081F27300C4DB94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6377BE2D2081F27300C4DB94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6377BE042081F27300C4DB94 = {
+			isa = PBXGroup;
+			children = (
+				6377BE0F2081F27300C4DB94 /* AppsSuspend_MethodSwizzle */,
+				6377BE282081F27300C4DB94 /* AppsSuspend_MethodSwizzleTests */,
+				6377BE332081F27300C4DB94 /* AppsSuspend_MethodSwizzleUITests */,
+				6377BE0E2081F27300C4DB94 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6377BE0E2081F27300C4DB94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6377BE0D2081F27300C4DB94 /* AppsSuspend_MethodSwizzle.app */,
+				6377BE252081F27300C4DB94 /* AppsSuspend_MethodSwizzleTests.xctest */,
+				6377BE302081F27300C4DB94 /* AppsSuspend_MethodSwizzleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6377BE0F2081F27300C4DB94 /* AppsSuspend_MethodSwizzle */ = {
+			isa = PBXGroup;
+			children = (
+				6377BE422081F28500C4DB94 /* AppsSuspend */,
+				6377BE102081F27300C4DB94 /* AppDelegate.h */,
+				6377BE112081F27300C4DB94 /* AppDelegate.m */,
+				6377BE132081F27300C4DB94 /* ViewController.h */,
+				6377BE142081F27300C4DB94 /* ViewController.m */,
+				6377BE4C2081F50800C4DB94 /* OneViewController.h */,
+				6377BE4D2081F50800C4DB94 /* OneViewController.m */,
+				6377BE4F2081F51300C4DB94 /* TwoViewController.h */,
+				6377BE502081F51300C4DB94 /* TwoViewController.m */,
+				6377BE162081F27300C4DB94 /* Main.storyboard */,
+				6377BE192081F27300C4DB94 /* Assets.xcassets */,
+				6377BE1B2081F27300C4DB94 /* LaunchScreen.storyboard */,
+				6377BE1E2081F27300C4DB94 /* Info.plist */,
+				6377BE1F2081F27300C4DB94 /* main.m */,
+			);
+			path = AppsSuspend_MethodSwizzle;
+			sourceTree = "<group>";
+		};
+		6377BE282081F27300C4DB94 /* AppsSuspend_MethodSwizzleTests */ = {
+			isa = PBXGroup;
+			children = (
+				6377BE292081F27300C4DB94 /* AppsSuspend_MethodSwizzleTests.m */,
+				6377BE2B2081F27300C4DB94 /* Info.plist */,
+			);
+			path = AppsSuspend_MethodSwizzleTests;
+			sourceTree = "<group>";
+		};
+		6377BE332081F27300C4DB94 /* AppsSuspend_MethodSwizzleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6377BE342081F27300C4DB94 /* AppsSuspend_MethodSwizzleUITests.m */,
+				6377BE362081F27300C4DB94 /* Info.plist */,
+			);
+			path = AppsSuspend_MethodSwizzleUITests;
+			sourceTree = "<group>";
+		};
+		6377BE422081F28500C4DB94 /* AppsSuspend */ = {
+			isa = PBXGroup;
+			children = (
+				6377BE432081F28500C4DB94 /* RemoveButton.h */,
+				6377BE462081F28500C4DB94 /* RemoveButton.m */,
+				6377BE452081F28500C4DB94 /* AppsSuspendManager.h */,
+				6377BE482081F28500C4DB94 /* AppsSuspendManager.m */,
+				6377BE442081F28500C4DB94 /* UIViewController+AppsSuspend.h */,
+				6377BE472081F28500C4DB94 /* UIViewController+AppsSuspend.m */,
+			);
+			path = AppsSuspend;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6377BE0C2081F27300C4DB94 /* AppsSuspend_MethodSwizzle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6377BE392081F27300C4DB94 /* Build configuration list for PBXNativeTarget "AppsSuspend_MethodSwizzle" */;
+			buildPhases = (
+				6377BE092081F27300C4DB94 /* Sources */,
+				6377BE0A2081F27300C4DB94 /* Frameworks */,
+				6377BE0B2081F27300C4DB94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppsSuspend_MethodSwizzle;
+			productName = AppsSuspend_MethodSwizzle;
+			productReference = 6377BE0D2081F27300C4DB94 /* AppsSuspend_MethodSwizzle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6377BE242081F27300C4DB94 /* AppsSuspend_MethodSwizzleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6377BE3C2081F27300C4DB94 /* Build configuration list for PBXNativeTarget "AppsSuspend_MethodSwizzleTests" */;
+			buildPhases = (
+				6377BE212081F27300C4DB94 /* Sources */,
+				6377BE222081F27300C4DB94 /* Frameworks */,
+				6377BE232081F27300C4DB94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6377BE272081F27300C4DB94 /* PBXTargetDependency */,
+			);
+			name = AppsSuspend_MethodSwizzleTests;
+			productName = AppsSuspend_MethodSwizzleTests;
+			productReference = 6377BE252081F27300C4DB94 /* AppsSuspend_MethodSwizzleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6377BE2F2081F27300C4DB94 /* AppsSuspend_MethodSwizzleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6377BE3F2081F27300C4DB94 /* Build configuration list for PBXNativeTarget "AppsSuspend_MethodSwizzleUITests" */;
+			buildPhases = (
+				6377BE2C2081F27300C4DB94 /* Sources */,
+				6377BE2D2081F27300C4DB94 /* Frameworks */,
+				6377BE2E2081F27300C4DB94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6377BE322081F27300C4DB94 /* PBXTargetDependency */,
+			);
+			name = AppsSuspend_MethodSwizzleUITests;
+			productName = AppsSuspend_MethodSwizzleUITests;
+			productReference = 6377BE302081F27300C4DB94 /* AppsSuspend_MethodSwizzleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6377BE052081F27300C4DB94 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = WenZiCyan;
+				TargetAttributes = {
+					6377BE0C2081F27300C4DB94 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					6377BE242081F27300C4DB94 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6377BE0C2081F27300C4DB94;
+					};
+					6377BE2F2081F27300C4DB94 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6377BE0C2081F27300C4DB94;
+					};
+				};
+			};
+			buildConfigurationList = 6377BE082081F27300C4DB94 /* Build configuration list for PBXProject "AppsSuspend_MethodSwizzle" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6377BE042081F27300C4DB94;
+			productRefGroup = 6377BE0E2081F27300C4DB94 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6377BE0C2081F27300C4DB94 /* AppsSuspend_MethodSwizzle */,
+				6377BE242081F27300C4DB94 /* AppsSuspend_MethodSwizzleTests */,
+				6377BE2F2081F27300C4DB94 /* AppsSuspend_MethodSwizzleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6377BE0B2081F27300C4DB94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6377BE1D2081F27300C4DB94 /* LaunchScreen.storyboard in Resources */,
+				6377BE1A2081F27300C4DB94 /* Assets.xcassets in Resources */,
+				6377BE182081F27300C4DB94 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6377BE232081F27300C4DB94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6377BE2E2081F27300C4DB94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6377BE092081F27300C4DB94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6377BE152081F27300C4DB94 /* ViewController.m in Sources */,
+				6377BE202081F27300C4DB94 /* main.m in Sources */,
+				6377BE4B2081F28500C4DB94 /* AppsSuspendManager.m in Sources */,
+				6377BE122081F27300C4DB94 /* AppDelegate.m in Sources */,
+				6377BE492081F28500C4DB94 /* RemoveButton.m in Sources */,
+				6377BE4E2081F50800C4DB94 /* OneViewController.m in Sources */,
+				6377BE4A2081F28500C4DB94 /* UIViewController+AppsSuspend.m in Sources */,
+				6377BE512081F51300C4DB94 /* TwoViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6377BE212081F27300C4DB94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6377BE2A2081F27300C4DB94 /* AppsSuspend_MethodSwizzleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6377BE2C2081F27300C4DB94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6377BE352081F27300C4DB94 /* AppsSuspend_MethodSwizzleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6377BE272081F27300C4DB94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6377BE0C2081F27300C4DB94 /* AppsSuspend_MethodSwizzle */;
+			targetProxy = 6377BE262081F27300C4DB94 /* PBXContainerItemProxy */;
+		};
+		6377BE322081F27300C4DB94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6377BE0C2081F27300C4DB94 /* AppsSuspend_MethodSwizzle */;
+			targetProxy = 6377BE312081F27300C4DB94 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6377BE162081F27300C4DB94 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6377BE172081F27300C4DB94 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6377BE1B2081F27300C4DB94 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6377BE1C2081F27300C4DB94 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6377BE372081F27300C4DB94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6377BE382081F27300C4DB94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6377BE3A2081F27300C4DB94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VZ2673TTD2;
+				INFOPLIST_FILE = AppsSuspend_MethodSwizzle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "WenZiCyan.AppsSuspend-MethodSwizzle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6377BE3B2081F27300C4DB94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VZ2673TTD2;
+				INFOPLIST_FILE = AppsSuspend_MethodSwizzle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "WenZiCyan.AppsSuspend-MethodSwizzle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6377BE3D2081F27300C4DB94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AppsSuspend_MethodSwizzleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "WenZiCyan.AppsSuspend-MethodSwizzleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppsSuspend_MethodSwizzle.app/AppsSuspend_MethodSwizzle";
+			};
+			name = Debug;
+		};
+		6377BE3E2081F27300C4DB94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AppsSuspend_MethodSwizzleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "WenZiCyan.AppsSuspend-MethodSwizzleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppsSuspend_MethodSwizzle.app/AppsSuspend_MethodSwizzle";
+			};
+			name = Release;
+		};
+		6377BE402081F27300C4DB94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AppsSuspend_MethodSwizzleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "WenZiCyan.AppsSuspend-MethodSwizzleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AppsSuspend_MethodSwizzle;
+			};
+			name = Debug;
+		};
+		6377BE412081F27300C4DB94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AppsSuspend_MethodSwizzleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "WenZiCyan.AppsSuspend-MethodSwizzleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AppsSuspend_MethodSwizzle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6377BE082081F27300C4DB94 /* Build configuration list for PBXProject "AppsSuspend_MethodSwizzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6377BE372081F27300C4DB94 /* Debug */,
+				6377BE382081F27300C4DB94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6377BE392081F27300C4DB94 /* Build configuration list for PBXNativeTarget "AppsSuspend_MethodSwizzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6377BE3A2081F27300C4DB94 /* Debug */,
+				6377BE3B2081F27300C4DB94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6377BE3C2081F27300C4DB94 /* Build configuration list for PBXNativeTarget "AppsSuspend_MethodSwizzleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6377BE3D2081F27300C4DB94 /* Debug */,
+				6377BE3E2081F27300C4DB94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6377BE3F2081F27300C4DB94 /* Build configuration list for PBXNativeTarget "AppsSuspend_MethodSwizzleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6377BE402081F27300C4DB94 /* Debug */,
+				6377BE412081F27300C4DB94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6377BE052081F27300C4DB94 /* Project object */;
+}
