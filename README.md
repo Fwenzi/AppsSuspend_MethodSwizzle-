@@ -1,0 +1,2 @@
+# AppsSuspend_MethodSwizzle-
+利用objc_Runtime设计全app悬浮按钮的坑及填坑坑
